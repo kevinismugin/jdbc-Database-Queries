@@ -2,6 +2,8 @@
 
 Within directory "src/main" contains "java" directory that contains the Main.java class. 
 
+Within the same "java" directory contains the Schema.sql file that contains the necessary sql queries to create the initial database within your postgresql application.
+
 This file contains the main function that contains all of the implementation. It connects to a localhost postgresql database using String url = "jdbc:postgresql://localhost:5432/Assignment3"; change 5432 to the port number of postgresql application being used and change Assignment3 to the name of the database you wish to connect to.
 
 String user = "postgres"; change postgres to your user name for the postgresql application #line 11
