@@ -8,7 +8,19 @@ String user = "postgres"; change postgres to your user name for the postgresql a
 
 String password = "HaveFun:)"; change HaveFun:) to your password for the postgresql application #line 13
 
-The program will use this information to connect to the database using jdbc and provide a user interface like this:
+The program will use this information to connect to the database using jdbc, here's a schema of the database, fields represent the columns of the data rows.
+
+Database Schema:
+
+    Table name: students
+    Fields:
+        student_id: Integer, Primary Key, Auto-increment
+        first_name: Text, Not Null
+        last_name: Text, Not Null
+        email: Text, Not Null, Unique
+        enrollment_date: Date
+
+The application provides a user interface like this:
 
 Please enter a number in the range 0-4 to select one of the options below
 1: Display all records from the students table.
@@ -16,6 +28,8 @@ Please enter a number in the range 0-4 to select one of the options below
 3: Update student email.
 4: Delete student.
 0: EXIT.
+
+User inputs a number from 0 to 4 to use the desired implementation.
 
 When changing names or emails, the function takes in input in the form of **strings** with **no spaces** (takes singles arguments) and does not have data validation.
 
