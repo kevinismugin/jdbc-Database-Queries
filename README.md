@@ -10,6 +10,8 @@ String user = "postgres"; change postgres to your user name for the postgresql a
 
 String password = "HaveFun:)"; change HaveFun:) to your password for the postgresql application #line 13
 
+COMPILATION AND RUNNING: Open the project in IntelliJ, configure the JDK based on what IntelliJ recommends, open the Main.java file within the "java" directory. Right click and click Run for IntelliJ to compile and run the program.
+
 The program will use this information to connect to the database using jdbc, here's a schema of the database, fields represent the columns of the data rows.
 
 Database Schema:
